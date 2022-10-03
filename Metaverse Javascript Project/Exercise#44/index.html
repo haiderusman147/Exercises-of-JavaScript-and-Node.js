@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            
+            Sandwich_show(['garlic','chillie','paste']);
+            Sandwich_show(['less spicy']);
+            Sandwich_show(['item1','item2','item3','item4']);
+        }
+        function Sandwich_show(items){
+            console.log('Summary of ordered Sandwich:');
+          for(var i=0;i<items.length;i++){
+            console.log(items[i]);
+          }
+    }
+    </script>
+</body>

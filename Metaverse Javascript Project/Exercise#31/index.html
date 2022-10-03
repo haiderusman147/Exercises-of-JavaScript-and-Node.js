@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+           //if user exists
+            var Username=['Admin','Usman','Arshad'];
+            var userExist=0;
+            for(var i=0;i<Username.length;i++){
+                
+                    userExist++;
+            }
+            if(userExist>0){
+                console.log('Found');
+            }else{
+                console.log('We need to find some users!');
+            }
+            //if no user exists
+            Username.pop();
+            Username.pop();
+            Username.pop();
+            var userExist=0;
+            for(var i=0;i<Username.length;i++){
+                
+                userExist++;
+        }
+        if(userExist>0){
+            console.log('Found');
+        }else{
+            console.log('We need to find some users!');
+        }
+            
+         
+    }
+    </script>
+</body>

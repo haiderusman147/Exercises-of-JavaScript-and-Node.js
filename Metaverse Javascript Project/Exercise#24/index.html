@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            var animal,pet,coin,metaverse='';
+            
+            animal='puppy';
+            pet='puppy';
+            coin='stable';
+            metaverse='future';
+            //Strings
+            console.log("Is animal == pet? I predict true.");
+            console.log(animal == pet);
+            console.log("Is coin == metaverse? I predict false.");
+            console.log(coin == metaverse);
+            //lower case
+            animal='puppy';
+            pet='Puppy';
+            coin='Stable';
+            metaverse='stable';
+            console.log("Is animal == pet? I predict true.");
+            console.log(animal == pet.toLowerCase());
+            console.log("Is coin == metaverse? I predict false.");
+            console.log(coin == metaverse);
+            //numeric
+            a=12;b=15;
+            console.log(a == b);
+            console.log(a <= b);
+            console.log(a >= b);
+            console.log(a > b);
+            console.log(a < b);
+            console.log(a != b);
+            //operators
+            //if one of all conditions is true then results true
+            console.log(a>10 || b>100);
+            //if one of all conditions is false then results false
+            console.log(a>10 && b>100);
+            //check item in array
+            var item=['green','blue','black'];
+            var isExist=0;
+            for(var i=0;i<item.length;i++){
+                if(item[i]=='bluae'){
+                    isExist++;
+                }
+            }
+            isExist>0 ? (console.log("Item Exists in array")):(console.log("Item does not Exists in array"));
+
+            
+        }
+    </script>
+</body>

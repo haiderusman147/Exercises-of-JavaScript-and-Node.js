@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            
+            var favorite_fruits=['Apple','Orange','Grape'];
+            var isExistApple=0;
+            var isExistOrange=0;
+            var isExistMango=0;
+            //for Apple(exist in Array)
+            var check='Apple';
+            for(var i=0;i<favorite_fruits.length;i++){
+                if(favorite_fruits[i]==check){
+                    isExistApple++;
+                }
+            }
+            isExistApple ?console.log('You really like Apple'): console.log('Not Found');
+            //for Orange(exist in Array)
+            var check='Orange';
+            for(var i=0;i<favorite_fruits.length;i++){
+                if(favorite_fruits[i]==check){
+                    isExistOrange++;
+                }
+            }
+            isExistOrange ?console.log('You really like Orange'): console.log('Not Found');
+            //for mango(not exist in Array)
+            var check='Mango';
+            for(var i=0;i<favorite_fruits.length;i++){
+                if(favorite_fruits[i]==check){
+                    isExistMango++;
+                }
+            }
+            isExistMango ?console.log('You really like Mango'): console.log('Not Found');
+        }
+    </script>
+</body>

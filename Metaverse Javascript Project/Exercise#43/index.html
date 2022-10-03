@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            var magicians=['Ali','Aslam','Kamran','Faheem','Noshad']
+            var original_mag=[...magicians];
+            make_great(magicians);
+            magicians_show(magicians,original_mag);
+        }
+        function make_great(magicians){
+            for(var i=0;i<magicians.length;i++){
+                magicians[i]='Great '+magicians[i];
+          }
+          return magicians;
+        }
+        function magicians_show(magicians,mag){
+          for(var i=0;i<magicians.length;i++){
+            console.log(magicians[i]);
+          }  
+          for(var i=0;i<mag.length;i++){
+            console.log(mag[i]);
+          }  
+          
+        
+          
+    }
+    </script>
+</body>

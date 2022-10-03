@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            show_car('Honda','Civic');
+            show_car('Honda','City','Red','KeyLess Entry');
+        }
+        function show_car(manufacturer,model_name,color,optional_feature){
+           var car={
+            'Manufacturer':manufacturer,
+            'Model Name':model_name
+           };
+            if(color!=undefined){
+                car['Color']=color;
+            }
+            if(optional_feature!=undefined){
+                car['Optional Feature']=optional_feature;
+            }
+            console.log(car);
+            
+           
+    }
+    </script>
+</body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            
+            var location=['Makkah','Madina','America','UAE','Turkey'];
+            var temp=location;
+            console.log("Original Array: "+location);
+            temp=[...temp].sort();
+            console.log("Alphabetical Sorted: "+ temp);
+            console.log("Original Array: "+location);
+            temp=[...temp].reverse();
+            console.log("Reverse Alphabetical Sorted: "+temp);
+            console.log("Original Array: "+location);
+            console.log("Reverse Array: " + location.reverse());
+            console.log("Reverse again(Original) Array: " + location.reverse());
+            console.log("Alphabetical Sorted: "+location.sort());
+            console.log("Reverse Alphabetical Sorted: "+location.reverse());
+
+        }
+    </script>
+</body>

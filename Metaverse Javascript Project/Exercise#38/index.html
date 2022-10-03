@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            var country='pakistan';
+            city_country('Lahore', country);
+            console.log(msg);
+            city_country('Islamabad', country);
+            console.log(msg);
+            city_country('Mexico', country);
+            console.log(msg);
+        }
+        function city_country(name,country){
+           
+            return msg=(name+ ' is in '+country);
+           
+    }
+    </script>
+</body>

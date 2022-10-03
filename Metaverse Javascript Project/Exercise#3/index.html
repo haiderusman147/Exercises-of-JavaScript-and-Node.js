@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project#2</title>
+</head>
+<body>
+    <span id="show_">
+    </span>
+    <span id="show_Lower">
+    </span>
+    <span id="show_Upper">
+    </span>
+    <span id="show_Title">
+    </span>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+    var v="Usman Haider";
+    document.getElementById("show_").innerHTML="Original String: "+v+"</br>";
+    document.getElementById("show_Upper").innerHTML="Upper Case: "+v.toUpperCase()+"</br>";
+    document.getElementById("show_Lower").innerHTML="Lower Case: "+v.toLowerCase()+"</br>";
+    document.getElementById("show_Title").innerHTML="Title Case: "+toTitle(v)+"</br>";
+   }
+   function toTitle(txt_){
+    txt_=txt_.toLowerCase();
+    txt_=txt_.split(' ');
+    for(var i = 0; i<txt_.length;i++){
+        txt_[i]=txt_[i].charAt(0).toUpperCase()+ txt_[i].slice(1);
+    }
+    return txt_.join(' ');
+   }
+    </script>
+</body>

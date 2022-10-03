@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panaverse Project</title>
+</head>
+<body>
+    <button onclick="show_()">Cliclk Me</button>
+    <script>
+        function show_(){
+            var current_users=['Admin','Usman','Arshad','Saleem','Iqra'];
+            var new_users=['Daud','Usman','ARSHAD','Saleem','Abid'];
+            for(var i=0;i<new_users.length;i++){
+                var temp=0;
+                for(var j=0;j<current_users.length;j++){ 
+                    if(current_users[j]==new_users[i]){
+                        console.log(new_users[i]+' will need to enter a new username');
+                        temp++;
+                    }
+                    }
+                    if(temp==0){
+                        console.log(new_users[i]+' is available');
+                }    
+            } 
+    }
+    </script>
+</body>
